@@ -17,8 +17,8 @@ echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 echo "Installing updated web3 via virtual registry "
 echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 
-#npm config set fetch-retry-mintimeout 100000
-#npm config set fetch-retry-maxtimeout 600000
+npm config set fetch-retry-mintimeout 100000
+npm config set fetch-retry-maxtimeout 600000
 
 npm install
 npm uninstall --save-dev web3
