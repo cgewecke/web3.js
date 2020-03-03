@@ -5,22 +5,18 @@ auth:
 uplinks:
   npmjs:
     url: https://registry.npmjs.org/
-    timeout: 100000ms
-    max_fails: 20
   yarn:
     url: https://registry.yarnpkg.com/
-    timeout: 100000ms
-    max_fails: 20
 packages:
   '@*/*':
     # scoped packages
     access: $all
     publish: $all
-    proxy: npmjs yarn
+    proxy: npmjs
   '**':
     access: $all
     publish: $all
-    proxy: npmjs yarn
+    proxy: npmjs
 logs:
   - {type: stdout, format: pretty, level: warn}
 
